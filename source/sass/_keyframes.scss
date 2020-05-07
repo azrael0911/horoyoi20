@@ -1,0 +1,147 @@
+@-webkit-keyframes animate-bright {
+    0% {
+        filter: url('data:image/svg+xml;charset=utf-8,<svg xmlns="http://www.w3.org/2000/svg"><filter id="filter"><feComponentTransfer color-interpolation-filters="sRGB"><feFuncR type="linear" slope="1" /><feFuncG type="linear" slope="1" /><feFuncB type="linear" slope="1" /></feComponentTransfer></filter></svg>#filter');
+		-webkit-filter: brightness(1);
+        filter: brightness(1);
+    }
+    100% {
+        filter: url('data:image/svg+xml;charset=utf-8,<svg xmlns="http://www.w3.org/2000/svg"><filter id="filter"><feComponentTransfer color-interpolation-filters="sRGB"><feFuncR type="linear" slope="1.5" /><feFuncG type="linear" slope="1.5" /><feFuncB type="linear" slope="1.5" /></feComponentTransfer></filter></svg>#filter');
+		-webkit-filter: brightness(1.5);
+        filter: brightness(1.5);
+    }
+}
+@keyframes animate-bright {
+    0% {
+        filter: url('data:image/svg+xml;charset=utf-8,<svg xmlns="http://www.w3.org/2000/svg"><filter id="filter"><feComponentTransfer color-interpolation-filters="sRGB"><feFuncR type="linear" slope="1" /><feFuncG type="linear" slope="1" /><feFuncB type="linear" slope="1" /></feComponentTransfer></filter></svg>#filter');
+		-webkit-filter: brightness(1);
+        filter: brightness(1);
+    }
+    100% {
+        filter: url('data:image/svg+xml;charset=utf-8,<svg xmlns="http://www.w3.org/2000/svg"><filter id="filter"><feComponentTransfer color-interpolation-filters="sRGB"><feFuncR type="linear" slope="1.5" /><feFuncG type="linear" slope="1.5" /><feFuncB type="linear" slope="1.5" /></feComponentTransfer></filter></svg>#filter');
+		-webkit-filter: brightness(1.5);
+        filter: brightness(1.5);
+    }
+}
+@-webkit-keyframes animate-glow {
+    0% {
+        -webkit-box-shadow: rgba(255, 255, 255, 0.2) 0 0 1px, rgba(255, 255, 255, 0.2) 0 0 1px inset;
+        box-shadow: rgba(255, 255, 255, 0.2) 0 0 1px, rgba(255, 255, 255, 0.2) 0 0 1px inset;
+    }
+    100% {
+        -webkit-box-shadow: #fff 0 0 16px, #fff 0 0 16px inset;
+        box-shadow: #fff 0 0 16px, #fff 0 0 16px inset;
+    }
+}
+@keyframes animate-glow {
+    0% {
+        -webkit-box-shadow: rgba(255, 255, 255, 0.2) 0 0 1px, rgba(255, 255, 255, 0.2) 0 0 1px inset;
+        box-shadow: rgba(255, 255, 255, 0.2) 0 0 1px, rgba(255, 255, 255, 0.2) 0 0 1px inset;
+    }
+    100% {
+        -webkit-box-shadow: #fff 0 0 16px, #fff 0 0 16px inset;
+        box-shadow: #fff 0 0 16px, #fff 0 0 16px inset;
+    }
+}
+@-webkit-keyframes animate-fadein {
+    0% {
+        opacity: 0;
+        filter: alpha(opacity = 0);
+    }
+    100% {
+        opacity: 1;
+        filter: alpha(opacity = 100);
+    }
+}
+@keyframes animate-fadein {
+    0% {
+        opacity: 0;
+        filter: alpha(opacity = 0);
+    }
+    100% {
+        opacity: 1;
+        filter: alpha(opacity = 100);
+    }
+}
+@-webkit-keyframes animate-fadeout {
+    0% {
+        opacity: 1;
+        filter: alpha(opacity = 100);
+    }
+    100% {
+        opacity: 0;
+        filter: alpha(opacity = 0);
+    }
+}
+@keyframes animate-fadeout {
+    0% {
+        opacity: 1;
+        filter: alpha(opacity = 100);
+    }
+    100% {
+        opacity: 0;
+        filter: alpha(opacity = 0);
+    }
+}
+@-webkit-keyframes animate-content-in {
+    0% {
+        opacity: 0;
+        filter: alpha(opacity = 0);
+		-webkit-transform: translate(0, 20px) scale3d(0.95, 0.95, 1);
+        transform: translate(0, 20px) scale3d(0.95, 0.95, 1);
+    }
+    100% {
+        opacity: 1;
+        filter: alpha(opacity = 100);
+		-webkit-transform: translate(0, 0) scale3d(1, 1, 1);
+        transform: translate(0, 0) scale3d(1, 1, 1);
+    }
+}
+@keyframes animate-content-in {
+    0% {
+        opacity: 0;
+        filter: alpha(opacity = 0);
+		-webkit-transform: translate(0, 20px) scale3d(0.95, 0.95, 1);
+        transform: translate(0, 20px) scale3d(0.95, 0.95, 1);
+    }
+    100% {
+        opacity: 1;
+        filter: alpha(opacity = 100);
+		-webkit-transform: translate(0, 0) scale3d(1, 1, 1);
+        transform: translate(0, 0) scale3d(1, 1, 1);
+    }
+}
+@-webkit-keyframes animate-content-out {
+    0% {
+        opacity: 1;
+        filter: alpha(opacity = 100);
+		-webkit-transform: translate(0, 0) scale3d(1, 1, 1);
+        transform: translate(0, 0) scale3d(1, 1, 1);
+    }
+    100% {
+        opacity: 0;
+        filter: alpha(opacity = 0);
+		-webkit-transform: translate(0, 20px) scale3d(0.95, 0.95, 1);
+        transform: translate(0, 20px) scale3d(0.95, 0.95, 1);
+    }
+}
+@keyframes animate-content-out {
+    0% {
+        opacity: 1;
+        filter: alpha(opacity = 100);
+		-webkit-transform: translate(0, 0) scale3d(1, 1, 1);
+        transform: translate(0, 0) scale3d(1, 1, 1);
+    }
+    100% {
+        opacity: 0;
+        filter: alpha(opacity = 0);
+		-webkit-transform: translate(0, 20px) scale3d(0.95, 0.95, 1);
+        transform: translate(0, 20px) scale3d(0.95, 0.95, 1);
+    }
+}
+.navList_hover  {
+	filter:url('data:image/svg+xml;charset=utf-8,<svg xmlns="http://www.w3.org/2000/svg"><filter id="filter"><feComponentTransfer color-interpolation-filters="sRGB"><feFuncR type="linear" slope="1.2" /><feFuncG type="linear" slope="1.2" /><feFuncB type="linear" slope="1.2" /></feComponentTransfer></filter></svg>#filter');
+	-webkit-filter:brightness(1.2);
+	filter:brightness(1.2);
+	-webkit-animation:animate-glow 0.5s linear 0s infinite alternate;
+	animation:animate-glow 0.5s linear 0s infinite alternate;
+}

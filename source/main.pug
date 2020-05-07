@@ -1,0 +1,381 @@
+<!DOCTYPE html>
+html(lang="zh_tw")
+	head
+		<!-- #include file="include/webInfo.asp" -->
+	body.noScroll 
+		<!-- #include file="include/loading.asp" -->
+		header.pc
+			img(src="images/headerBg.png", width="100%")
+			nav 
+				a(data-rel=".section1") ほろよい首頁
+				a(data-rel=".section2") ほろよい小檔案
+				a(data-rel=".section3") 和ほろよい做朋友
+				a(data-rel=".section4") ほろよい好滋味
+				a(data-rel=".section5") ほろよい放映館
+		header.mobile 
+			img.logo(src="images/logoMobile.jpg", width="100%")
+			a.menu 
+				img(src="images/menu.png", width="100%")
+			.mobileNav 
+				nav 
+					.content
+						a(data-rel=".section1") ほろよい首頁
+						a(data-rel=".section2") ほろよい小檔案
+						a(data-rel=".section3") 和ほろよい做朋友
+						a(data-rel=".section4") ほろよい好滋味
+						a(data-rel=".section5") ほろよい放映館 
+						a(data-rel=".section1", href="http://www.suntory.com.tw/suntory/", target="_blank") SUNTORY官網
+		#container
+			section.section1 
+				img.pc(src="images/section1Bg.jpg", width="100%")
+				img.mobile(src="images/section1Bg_mobile.jpg", width="100%")
+				.slider 
+					.swiper-container 
+						.swiper-wrapper 
+							.swiper-slide 
+								img(src="images/slider1.jpg", alt="我的晚酌時光", width="100%")
+							.swiper-slide 
+								img(src="images/slider2.jpg", alt="我的晚酌時光", width="100%")
+					.swiper-button-next
+						img(src="images/sliderRight.png", alt="next", width="100%")
+					.swiper-button-prev
+						img(src="images/sliderLeft.png", alt="prev", width="100%")
+				.txt.pc
+					p 忙碌了一整天回到家打開ほろよい，享受屬於自己輕鬆自在的晚酌儀式 
+					p 讓忙碌緊張的身心跟著ほろよい切換成 Off 模式
+			section.section2 
+				img.pc(src="images/section2Bg_a.jpg", width="100%")
+				img.mobile(src="images/sectionBg2_mobileA.jpg", width="100%")
+				img.note.pc(src="images/note.png", width="100%")
+				img.pd.pc(src="images/pd.png", width="100%")
+				img.note.mobile(src="images/noteMobile.png", width="100%")
+				.mask
+				.light.pc 
+					img(src="images/light.png", width="100%")
+					img.flash(src="images/light2.png", width="100%")
+			section.section3 
+				img.pc(src="images/section2Bg_b.jpg", width="100%")
+				img.mobile(src="images/sectionBg2_mobileB.jpg", width="100%")
+				.social
+					#fb-root
+					script(async='', defer='', crossorigin='anonymous', src='https://connect.facebook.net/zh_TW/sdk.js#xfbml=1&version=v6.0')
+					.fb-page(data-href='https://www.facebook.com/twhoroyoi/', data-tabs='timeline', data-width='446', data-height='397', data-small-header='false', data-adapt-container-width='false', data-hide-cover='false', data-show-facepile='false')
+						blockquote.fb-xfbml-parse-ignore(cite='https://www.facebook.com/twhoroyoi/')
+							a(href='https://www.facebook.com/twhoroyoi/')
+				img.curtain.pc(src="images/curtain.png")
+				img.curtain.mobile(src="images/curtainMobile.png")
+				.btn
+					a(href="https://www.instagram.com/horoyoi_tw/?hl=zh-tw", target="_blank") 
+						img(src="images/btnIg.png", width="100%")
+					a.pc(href="https://www.facebook.com/twhoroyoi/", target="_blank") 
+						img(src="images/btnFb.png", width="100%")
+					a.mobile(href="fb://page/?id=689600344398345", target="_blank") 
+						img(src="images/btnFb.png", width="100%")
+			section.section4 
+				img.pc(src="images/section3Bg.jpg", width="100%")
+				img.mobile(src="images/section3Bg_mobile.jpg", width="100%")
+				img.plant.mobile(src="images/plant.png")
+				.cabinet 
+					img.pc(src="images/cabinet.png", width="100%")
+					img.mobile(src="images/cabinetMobie.png", width="100%")
+					.pd.pd1 
+						img(src="images/pd1.png", alt="白色沙瓦", width="100%")
+						.tag 白色沙瓦
+					.pd.pd2
+						img(src="images/pd2.png", alt="白桃", width="100%")
+						.tag 白桃
+					.pd.pd3 
+						img(src="images/pd3.png", alt="白葡萄", width="100%")
+						.tag 白葡萄
+					.pd.pd4 
+						img(src="images/pd4.png", alt="葡萄沙瓦", width="100%")
+						.tag 葡萄沙瓦
+					.pd.pd5 
+						img(src="images/pd5.png", alt="紅茶沙瓦", width="100%")
+						.tag 紅茶沙瓦
+					.pd.pd6 
+						img(src="images/pd6.png", alt="蜂蜜檸檬", width="100%")
+						.tag 蜂蜜檸檬
+				.pop 
+					a.close.pc
+					a.close.mobile
+					.content 
+						.swiper-container
+							.swiper-wrapper
+								.swiper-slide
+									.pic 
+										img.pc(src="images/pd1B.png", alt="白色沙瓦 ", width="100%")
+										img.mobile(src="images/pd1B_mobile.png", alt="白色沙瓦 ", width="100%")
+									.pdInfo 
+										h3 白色沙瓦 
+										img.line(src="images/pdLine.png")
+										p.txt 柔和的酸甜口感與清爽的餘味，重現乳酸調酒的清新爽口。3%的酒精濃度加上微碳酸，更能感受微酸微甜的舒服口感。
+										.etc 
+											.capacity 
+												span 容量：
+												|350ml
+											.price 
+												span 建議售價：
+												b 47 
+												|元
+										.path 
+											span 銷售通路： 
+											p 7-ELEVEn、全家、萊爾富、OK超商、家樂福、大潤發、愛買、全聯、頂好、美廉社、Jasons、楓康、City’super、寶雅、日藥本鋪
+										a.link(href="http://www.suntory.com.tw/suntory/wine-product.aspx?sno=89", target="_blank") 營養成分標示
+								.swiper-slide
+									.pic 
+										img.pc(src="images/pd2B.png", alt="白桃", width="100%")
+										img.mobile(src="images/pd2B_mobile.png", alt="白桃 ", width="100%")
+									.pdInfo 
+										h3 白桃
+										img.line(src="images/pdLine.png")
+										p.txt 使用日本國產的白桃果汁，白桃纖細的口感更加明顯，享受白桃新鮮多汁的甜美與水果柔軟的香甜，3%的酒精含量，飲用無負擔。
+										.etc 
+											.capacity 
+												span 容量：
+												|350ml
+											.price 
+												span 建議售價：
+												b 47 
+												|元
+										.path 
+											span 銷售通路： 
+											p 7-ELEVEn
+										a.link(href="http://www.suntory.com.tw/suntory/wine-product.aspx?sno=73", target="_blank") 營養成分標示
+								.swiper-slide
+									.pic 
+										img.pc(src="images/pd3B.png", alt="白葡萄", width="100%")
+										img.mobile(src="images/pd3B_mobile.png", alt="白葡萄", width="100%")
+									.pdInfo 
+										h3 白葡萄
+										img.line(src="images/pdLine.png")
+										p.txt 白葡萄的濃郁果香與清爽尾韻完美結合的甜美好滋味，3%的酒精含量，飲用無負擔。
+										.etc 
+											.capacity 
+												span 容量：
+												|350ml
+											.price 
+												span 建議售價：
+												b 47 
+												|元
+										.path 
+											span 銷售通路： 
+											p 7-ELEVEn、全家、萊爾富、OK超商、家樂福、大潤發、愛買、全聯、頂好、Jasons、楓康、City’super、寶雅、日藥本鋪
+										a.link(href="http://www.suntory.com.tw/suntory/wine-product.aspx?sno=149", target="_blank") 營養成分標示
+								.swiper-slide
+									.pic 
+										img.pc(src="images/pd4B.png", alt="葡萄沙瓦", width="100%")
+										img.mobile(src="images/pd4B_mobile.png", alt="葡萄沙瓦", width="100%")
+									.pdInfo 
+										h3 葡萄沙瓦 
+										img.line(src="images/pdLine.png")
+										p.txt 葡萄果香豐富十足，濃郁迷人，適合舒緩情緒，飲用清爽暢快，深受年輕人歡迎的葡萄蘇打口味，3%的酒精含量，飲用無負擔。
+										.etc 
+											.capacity 
+												span 容量：
+												|350ml
+											.price 
+												span 建議售價：
+												b 47 
+												|元
+										.path 
+											span 銷售通路： 
+											p 7-ELEVEn、全家、萊爾富、家樂福、大潤發、愛買、全聯、頂好、美廉社、Jasons、楓康、City’super、寶雅、日藥本鋪
+										a.link(href="http://www.suntory.com.tw/suntory/wine-product.aspx?sno=72", target="_blank") 營養成分標示
+								.swiper-slide
+									.pic 
+										img.pc(src="images/pd5B.png", alt="紅茶沙瓦", width="100%")
+										img.mobile(src="images/pd5B_mobile.png", alt="紅茶沙瓦", width="100%")
+									.pdInfo 
+										h3 紅茶沙瓦
+										img.line(src="images/pdLine.png")
+										p.txt 年輕人最愛的「紅茶飲料」美味變身！紅茶的華麗香氣加上淡淡的清爽檸檬後味，形成清新的甘甜和果香。
+										.etc 
+											.capacity 
+												span 容量：
+												|350ml
+											.price 
+												span 建議售價：
+												b 47 
+												|元
+										.path 
+											span 銷售通路： 
+											p 7-ELEVEn、家樂福、大潤發、愛買、全聯、頂好、Jasons、楓康、City’super、寶雅、日藥本鋪
+										a.link(href="http://www.suntory.com.tw/suntory/wine-product.aspx?sno=102", target="_blank") 營養成分標示
+								.swiper-slide
+									.pic 
+										img.pc(src="images/pd6B.png", alt="蜂蜜檸檬", width="100%")
+										img.mobile(src="images/pd6B_mobile.png", alt="蜂蜜檸檬", width="100%")
+									.pdInfo 
+										h3 蜂蜜檸檬 
+										img.line(src="images/pdLine.png")
+										p.txt 超人氣的蜂蜜檸檬，甘甜的蜂蜜與清爽的檸檬，揉合成清新順口的酸甜滋味。3%的酒精含量，輕鬆飲用無負擔。
+										.etc 
+											.capacity 
+												span 容量：
+												|350ml
+											.price 
+												span 建議售價：
+												b 47 
+												|元
+										.path 
+											span 銷售通路： 
+											p 全聯
+										a.link(href="http://www.suntory.com.tw/suntory/wine-product.aspx?sno=142", target="_blank") 營養成分標示
+						.swiper-button-next
+							img(src="images/sliderRight.png", alt="next", width="100%")
+						.swiper-button-prev
+							img(src="images/sliderLeft.png", alt="prev", width="100%")
+			section.section5
+				img.pc(src="images/section4Bg.jpg", width="100%")
+				img.mobile(src="images/section4Bg_mobile.jpg", width="100%")
+				img.light.pc(src="images/light3.png")
+				.slider 
+					.swiper-container.mvTop 
+						.swiper-wrapper 
+							.swiper-slide 
+								img(src="images/commingSoon.jpg", alt="Hebe田馥甄 電影篇", width="100%")
+							.swiper-slide 
+								img(src="images/commingSoon.jpg", alt="Yoga林宥嘉 相聚篇", width="100%")
+							.swiper-slide 
+								img(src="images/commingSoon.jpg", alt="Hebe田馥甄 廣告花絮", width="100%")
+							.swiper-slide 
+								img(src="images/commingSoon.jpg", alt="Yoga林宥嘉 廣告花絮", width="100%")
+					.swiper-container.mvThumbs 
+						.swiper-wrapper 
+							.swiper-slide Hebe田馥甄 電影篇
+							.swiper-slide Yoga林宥嘉 相聚篇
+							.swiper-slide Hebe田馥甄 廣告花絮
+							.swiper-slide Yoga林宥嘉 廣告花絮
+					.swiper-button-next
+						img(src="images/sliderRight.png", alt="next", width="100%")
+					.swiper-button-prev
+						img(src="images/sliderLeft.png", alt="prev", width="100%")
+		footer 
+			img.pc(src="images/notice.png", alt="禁止酒駕 酒後不開車 安全有保障", width="100%")
+			img.mobile(src="images/noticeMobile.jpg", alt="禁止酒駕 酒後不開車 安全有保障", width="100%")
+		script.
+			$(window).load(function(){
+				setTimeout(function(){
+					$('.loading').fadeOut(500);
+					$('body').removeClass('noScroll');
+				},2500);
+				$(window).bind('scroll resize', function(){
+					var headerTop = $(this).scrollTop();
+					var section1 = $('.section1').height()-1;
+					var section2 = section1 + $('.section2').height();
+					var section3 = section2 + $('.section3').height();
+					var section4 = section3 + $('.section4').height();
+					var section5 = section4 + $('.section5').height();
+					var light = $('.section1').height()/2;
+					if(headerTop < 80){
+						$('header.pc').css({
+							position: 'absolute',
+							top: 80
+						});
+					}
+					if(headerTop > 80){
+						$('header.pc').css({
+							position: 'fixed',
+							top: 0
+						});
+					}
+					if(headerTop < section1){
+						$('nav a').removeClass('active');
+						$('nav a:nth-child(1)').addClass('active');
+					}else if(headerTop < section2){
+						$('nav a').removeClass('active');
+						$('nav a:nth-child(2)').addClass('active');
+					}else if(headerTop < section3){
+						$('nav a').removeClass('active');
+						$('nav a:nth-child(3)').addClass('active');
+					}else if(headerTop < section4){
+						$('nav a').removeClass('active');
+						$('nav a:nth-child(4)').addClass('active');
+					}else if(headerTop < section5){
+						$('nav a').removeClass('active');
+						$('nav a:nth-child(5)').addClass('active');
+					}
+					if(headerTop >= light){
+						$('.section2 .mask').fadeOut(300);
+					}else{
+						$('.section2 .mask').fadeIn(300);
+					}
+				}).scroll();
+			});
+			var slider = new Swiper ('.section1 .swiper-container', {
+				loop: true,
+				autoplay: {
+					delay: 3000
+				},
+				navigation: {
+					nextEl: '.section1 .swiper-button-next',
+					prevEl: '.section1 .swiper-button-prev',
+				}
+			});
+			var mvThumbs = new Swiper('.mvThumbs', {
+				freeMode: true,
+				slidesPerView: 4,
+				watchSlidesVisibility: true,
+				watchSlidesProgress: true,
+			});
+			var mvTop = new Swiper('.mvTop', {
+				navigation: {
+					nextEl: '.section5 .swiper-button-next',
+					prevEl: '.section5 .swiper-button-prev',
+				},
+				thumbs: {
+					swiper: mvThumbs
+				}
+			});
+			$(function(){
+				$("header nav a").click(function(){ 
+					var rel = $(this).data("rel"); 
+					var pos = $(rel).offset().top; 
+					$("html, body").animate({scrollTop:pos},1500); 
+				});
+				$('nav a:first-child').click(function(){
+					$('nav a').removeClass('active');
+					$('nav a:nth-child(1)').addClass('active');
+				});
+				$(".menu").click(function(){ 
+					$('.mobileNav').fadeToggle(300);
+				});
+				$(".mobileNav a").click(function(){ 
+					$('.mobileNav').fadeOut(300);
+				});
+				$('.pd').click(function(){
+					$('.pop').fadeIn(300);
+					var pd = new Swiper('.pop .swiper-container', {
+						navigation: {
+							nextEl: '.pop .swiper-button-next',
+							prevEl: '.pop .swiper-button-prev',
+						}
+					});
+					if($(this).hasClass('pd2')){
+						pd.slideTo(1);
+					}
+					if($(this).hasClass('pd3')){
+						pd.slideTo(2);
+					}
+					if($(this).hasClass('pd4')){
+						pd.slideTo(3);
+					}
+					if($(this).hasClass('pd5')){
+						pd.slideTo(4);
+					}
+					if($(this).hasClass('pd6')){
+						pd.slideTo(5);
+					}
+				});
+				$('.close').click(function(){
+					$('.pop').fadeOut(300);
+				});
+				var container_width = jQuery('.social').width();
+				jQuery('.fb-page').replaceWith('<div class="fb-page" data-version="1.4.2" data-href="https://www.facebook.com/twhoroyoi/" data-width="' + container_width + '" data-height="397" data-hide-cover="false" data-show-facepile="true" data-tabs="timeline" data-hide-cta="false" data-small-header="false" data-adapt-container-width="true" data-show-posts="true"><div class="fb-xfbml-parse-ignore"></div></div>');
+			});
+			jQuery( window ).resize(function() {
+				var container_width = jQuery('.social').width();
+				jQuery('.fb-page').replaceWith('<div class="fb-page" data-version="1.4.2" data-href="https://www.facebook.com/twhoroyoi/" data-width="' + container_width + '" data-height="397" data-hide-cover="false" data-show-facepile="true" data-tabs="timeline" data-hide-cta="false" data-small-header="false" data-adapt-container-width="true" data-show-posts="true"><div class="fb-xfbml-parse-ignore"></div></div>');
+				FB.XFBML.parse();
+			});

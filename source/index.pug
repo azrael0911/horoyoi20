@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+html(lang="zh_tw")
+	head
+		<!-- #include file="include/webInfo.asp" -->
+	body.r18 
+		<!-- #include file="include/loading.asp" -->
+		.content.pc 
+		.swiper-container 
+			.swiper-wrapper 
+				.swiper-slide 
+					img.pc(src="images/star1.png", width="100%")
+					img.mobile(src="images/star1Mobile.jpg", width="100%")
+				.swiper-slide 
+					img.pc(src="images/star2.png", width="100%")
+					img.mobile(src="images/star2Mobile.jpg", width="100%")
+		a.yes
+			|YES 
+			.button 
+				span
+		a.no
+			|NO
+			.button 
+				span
+		footer 
+			img.pc(src="images/notice.png", alt="禁止酒駕 酒後不開車 安全有保障", width="100%")
+			img.mobile(src="images/noticeMobile.jpg", alt="禁止酒駕 酒後不開車 安全有保障", width="100%")
+		script.
+			$(window).load(function(){
+				setTimeout(function(){
+					$('.loading').fadeOut(500);
+					$('body').removeClass('noScroll');
+				},2500);
+			});
+			var slider = new Swiper ('.swiper-container', {
+				loop: true,
+				effect: 'fade',
+				fadeEffect: {
+					crossFade: true
+				},
+				autoplay: {
+					delay: 3000
+				}
+			});
+			$(function(){
+				$('.no').click(function(){
+					$('.r18 > a').removeClass('active');
+					$(this).addClass('active');
+					setTimeout(function(){
+						alert("您尚未年滿18歲!!!");
+					},300);
+				});
+				$('.yes').click(function(){
+					$('.r18 > a').removeClass('active');
+					$(this).addClass('active');
+					setTimeout(function(){
+						window.location.href='main.asp';
+					},300);
+				});
+			});

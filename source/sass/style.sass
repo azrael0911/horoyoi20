@@ -1,0 +1,665 @@
+@import 'variable'
+@import 'reset'
+@import 'animate'
+@import 'mixin'
+@import 'base' 
+.noScroll 
+	height: 100vh 
+	overflow: hidden
+.loading 
+	background: #f6ebcf url(../images/bg.jpg) repeat-x center
+	width: 100% 
+	height: 100vh 
+	position: fixed 
+	z-index: 99999
+	top: 0
+	.bg 
+		position: absolute 
+		width: (635/19.2)+vw 
+		height: (608/19.2)+vw 
+		left: 0 
+		right: 0 
+		top: 0 
+		bottom: 0 
+		margin: auto 
+		@include phone 
+			width: (635/10.24)+vw 
+			height: (608/10.24)+vw 
+		.clock 
+			width: (210/19.2)+vw 
+			position: absolute 
+			left: (138/19.2)+vw 
+			top: 0
+			@include phone 
+				width: (210/10.24)+vw 
+				left: (138/10.24)+vw 
+			.hour 
+				position: absolute 
+				width: (45/19.2)+vw 
+				left: (71/19.2)+vw 
+				top: (89/19.2)+vw 
+				transform-origin: (28/19.2)+vw (12/19.2)+vw
+				animation: time 25s infinite linear 
+				@include phone 
+					width: (45/10.24)+vw 
+					left: (71/10.24)+vw 
+					top: (89/10.24)+vw 
+					transform-origin: (28/10.24)+vw (12/10.24)+vw
+			.minute 
+				position: absolute 
+				width: (22/19.2)+vw 
+				left: (90/19.2)+vw 
+				top: (39/19.2)+vw 
+				transform-origin: (9/19.2)+vw (62/19.2)+vw
+				animation: time 10s infinite linear
+				@include phone 
+					width: (22/10.24)+vw 
+					left: (90/10.24)+vw 
+					top: (39/10.24)+vw 
+					transform-origin: (9/10.24)+vw (62/10.24)+vw
+		.pd 
+			position: absolute 
+			right: 0 
+			top: 0 
+			width: (426/19.2)+vw 
+			animation: pdFloat 1s infinite alternate
+			@include phone 
+				width: (426/10.24)+vw 
+.r18
+	background: url(../images/r18Bg.jpg)
+	background-size: cover 
+	height: 100vh 
+	@include phone 
+		height: auto
+	#sxc_header_wrapper 
+		position: absolute 
+		top: 0
+		width: 100%
+		z-index: 2
+	.content 
+		background: url(../images/yesNo_bg.jpg) 
+		background-size: 100%
+		width: (1008/19.2)+vw 
+		height: (472/19.2)+vw 
+		position: absolute 
+		left: (453/19.2)+vw 
+		bottom: (317/19.2)+vw 
+		box-shadow: (20/19.2)+vw (20/19.2)+vw (35/19.2)+vw #dacdb2
+	.swiper-container 
+		position: absolute
+		width: (1515/19.2)+vw 
+		height: (760/19.2)+vw 
+		bottom: 0 
+		left: (269/19.2)+vw 
+		@include phone 
+			position: relative
+			width: 100% 
+			height: auto 
+			left: 0 
+			bottom: auto
+			top: 0
+	> a
+		position: absolute 
+		font-size: (34/19.2)+vw 
+		z-index: 2 
+		color: #78644b 
+		text-decoration: none 
+		bottom: (442/19.2)+vw 
+		cursor: pointer 
+		@include phone 
+			top: (840/10.24)+vw 
+			font-size: (65/10.24)+vw 
+	.button 
+		background-color: #ccc 
+		width: (47/19.2)+vw 
+		height: (28/19.2)+vw 
+		overflow: hidden 
+		position: relative 
+		border-radius: 28px
+		display: inline-block 
+		box-shadow: 1px 1px 3px #666 inset
+		@include phone 
+			width: (69/10.24)+vw 
+			height: (40/10.24)+vw 
+			border-radius: 40px 
+		span 
+			display: block 
+			width: (21/19.2)+vw 
+			height: (21/19.2)+vw 
+			background-color: white 
+			position: absolute 
+			top: 0 
+			bottom: 0 
+			left: (3/19.2)+vw 
+			margin: auto 
+			border-radius: 50% 
+			box-shadow: 1px 1px 3px #666 
+			@include phone 
+				width: (33/10.24)+vw 
+				height: (33/10.24)+vw 
+				left: (4/10.24)+vw 
+.yes 
+	left: (602/19.2)+vw 
+	@include phone 
+		left: (307/10.24)+vw 
+	&.active 
+		.button 
+			background: #8cbb34 
+			transition: background .3s 
+			span 
+				transform: translateX((20/19.2)+vw)
+				transition: transform .3s
+				@include phone 
+					transform: translateX((29/10.24)+vw)
+.no 
+	left: (735/19.2)+vw 
+	@include phone 
+		left: (559/10.24)+vw 
+	&.active 
+		.button 
+			background: #bf3d0a 
+			transition: background .3s 
+			span 
+				transform: translateX((20/19.2)+vw)
+				transition: transform .3s
+				@include phone 
+					transform: translateX((29/10.24)+vw)
+header.pc 
+	width: (963/19.2)+vw
+	left: 0 
+	right: 0 
+	margin: 0 auto
+	z-index: 4
+	nav 
+		width: (875/19.2)+vw
+		font-size: 0
+		position: absolute
+		left: 0 
+		right: 0
+		margin: 0 auto 
+		top: (44/19.2)+vw
+		a 
+			width: (175/19.2)+vw
+			font-size: (18/19.2)+vw
+			text-align: center
+			display: inline-block
+			border-right: 1px solid #544b44
+			cursor: pointer
+			color: #544b44
+			&:last-child
+				border: 0
+			&.active 
+				color: white 
+				background-color: #43b0ce
+header.mobile 
+	position: fixed 
+	z-index: 99 
+	width: 100%
+	.logo 
+		position: absolute 
+		z-index: 100 
+		box-shadow: 3px 3px 5px #999
+	a.menu 
+		position: absolute 
+		top: 0 
+		right: 0 
+		width: (160/10.24)+vw 
+		z-index: 100 
+	.mobileNav 
+		background-color: white 
+		position: absolute 
+		background-color: white  
+		top: 0 
+		display: none
+		width: 100%
+		nav
+			align-items: center 
+			display: flex
+			height: 100vh 
+		.content 
+			width: 100%
+		a 
+			display: block 
+			text-align: center
+			font-size: (60/10.24)+vw 
+			color: #544b44
+			line-height: (163/10.24)+vw 
+			text-decoration: none 
+			&:hover, &:focus, &.active
+				background-color: #44b2d0 
+				color: white
+.section1 
+	background: url(../images/section1Bg.jpg) no-repeat center top
+	background-size: 100% 
+	.slider 
+		position: absolute 
+		width: (831/19.2)+vw
+		border: (6/19.2)+vw solid white 
+		left: (545/19.2)+vw 
+		top: (267/19.2)+vw 
+		@include phone 
+			width: (833/10.24)+vw 
+			border: (3/10.24)+vw solid white 
+			left: 0 
+			right: 0 
+			top: (537/10.24)+vw 
+			margin: 0 auto
+		.swiper-button-next
+			right: ((52/19.2)*-1)+vw 
+			@include phone 
+				width: (54/10.24)+vw
+				right: ((54/10.24)*-1)+vw
+		.swiper-button-prev
+			left: ((52/19.2)*-1)+vw 
+			@include phone 
+				width: (54/10.24)+vw
+				left: ((54/10.24)*-1)+vw
+	.txt 
+		position: absolute
+		top: (720/19.2)+vw 
+		left: 0 
+		right: 0 
+		margin: 0 auto
+		p
+			font-size: (20/19.2)+vw 
+			text-align: center 
+			color: #544b44 
+			padding-bottom: (13/19.2)+vw
+.section2 
+	background: url(../images/section2Bg_a.jpg) no-repeat center top
+	background-size: 100% 
+	.light 
+		position: absolute 
+		width: (1067/19.2)+vw 
+		left: (359/19.2)+vw 
+		top: 0
+		.flash 
+			position: absolute
+			top: 0 
+			animation: lightFlash 3s linear infinite
+	.note 
+		position: absolute 
+		width: (635/19.2)+vw 
+		left: (521/19.2)+vw 
+		top: (300/19.2)+vw 
+		@include phone 
+			width: 100%
+			left: 0 
+			right: 0 
+			top: (338/10.24)+vw 
+			margin: 0 auto
+	.pd 
+		position: absolute
+		width: (357/19.2)+vw 
+		right: (453/19.2)+vw 
+		top: (289/19.2)+vw 
+	.mask 
+		position: absolute 
+		width: 100% 
+		height: 100% 
+		background: linear-gradient(to bottom, rgba(0,0,0,0.75) 0%,rgba(0,0,0,0) 100%)
+		top: 0
+.section3 
+	background: url(../images/section2Bg_b.jpg) no-repeat center top
+	background-size: 100% 
+	.social 
+		position: absolute
+		width: (446/19.2)+vw 
+		height: (397/19.2)+vw 
+		overflow: hidden 
+		right: (570/19.2)+vw 
+		bottom: (400/19.2)+vw 
+		z-index: 2
+		@include phone 
+			width: (815/10.24)+vw 
+			height: (735/10.24)+vw 
+			right: (90/10.24)+vw
+			bottom: (863/10.24)+vw 
+			margin: 0 auto
+	.curtain 
+		position: absolute
+		width: (735/19.2)+vw 
+		right: (419/19.2)+vw 
+		bottom: (370/19.2)+vw 
+		@include phone 
+			width: 100% 
+			right: 0 
+			bottom: (789/10.24)+vw 
+	.btn 
+		position: absolute
+		bottom: (295/19.2)+vw 
+		left: (1065/19.2)+vw 
+		@include phone 
+			bottom: (684/10.24)+vw 
+			text-align: center
+			width: 100%
+			left: 0
+		a 
+			display: inline-block 
+			width: (60/19.2)+vw 
+			margin: 0 (5/19.2)+vw 
+			@include phone
+				width: (105/10.24)+vw 
+				margin: 0 (13/10.24)+vw 
+		a.pc 
+			@include phone 
+				display: none !important
+		a.mobile 
+			display: none !important
+			@include phone 
+				display: inline-block !important
+.section4 
+	background: url(../images/bg2.jpg) no-repeat center top
+	background-size: 100% 
+	height: (1001/19.2)+vw 
+	.plant 
+		@include phone 
+			position: absolute 
+			right: 0 
+			bottom: (107/10.24)+vw 
+			width: (317/10.24)+vw 
+			z-index: 2
+	.cabinet 
+		position: absolute
+		left: 0 
+		right: 0 
+		bottom: 0 
+		margin: 0 auto
+		width: (577/19.2)+vw 
+		@include phone 
+			width: (938/10.24)+vw 
+			bottom: (132/10.24)+vw 
+		.pd 
+			width: (102/19.2)+vw 
+			position: absolute 
+			cursor: pointer 
+			@include phone 
+				width: (164/10.24)+vw 
+			&:hover
+				.tag
+					background: url(../images/tagHover.png) no-repeat
+					background-size: 100%
+					color: white 
+				> img
+					transform: scale(1.05)
+					transition: transform .3s
+			.tag 
+				position: absolute 
+				width: (102/19.2)+vw 
+				height: (35/19.2)+vw 
+				background: url(../images/tag.png) no-repeat
+				background-size: 100%
+				font-size: (16/19.2)+vw 
+				line-height: (31/19.2)+vw 
+				text-align: center
+				color: #472711 
+				@include phone 
+					width: (164/10.24)+vw 
+					height: (54/10.24)+vw 
+					font-size: (28/10.24)+vw 
+					line-height: (54/10.24)+vw 
+		.pd1 
+			left: (112/19.2)+vw
+			top: (91/19.2)+vw 
+			@include phone 
+				left: (203/10.24)+vw 
+				top: (149/10.24)+vw
+			.tag 
+				top: (137/19.2)+vw 
+				@include phone 
+					top: (222/10.24)+vw
+		.pd2 
+			left: (241/19.2)+vw 
+			top: (91/19.2)+vw 
+			@include phone 
+				left: (392/10.24)+vw 
+				top: (149/10.24)+vw
+			.tag 
+				top: (137/19.2)+vw 
+				@include phone 
+					top: (222/10.24)+vw
+		.pd3 
+			left: (241/19.2)+vw
+			top: (272/19.2)+vw
+			@include phone 
+				left: (392/10.24)+vw 
+				top: (445/10.24)+vw 
+			.tag 
+				top: (149/19.2)+vw 
+				@include phone 
+					top: (244/10.24)+vw
+		.pd4 
+			left: (358/19.2)+vw 
+			top: (272/19.2)+vw
+			@include phone 
+				left: (581/10.24)+vw 
+				top: (445/10.24)+vw 
+			.tag 
+				top: (149/19.2)+vw 
+				@include phone 
+					top: (244/10.24)+vw
+		.pd5 
+			left: (126/19.2)+vw
+			top: (462/19.2)+vw
+			@include phone 
+				left: (204/10.24)+vw 
+				top: (752/10.24)+vw 
+			.tag 
+				top: (154/19.2)+vw 
+				@include phone 
+					top: (250/10.24)+vw
+		.pd6 
+			left: (240/19.2)+vw 
+			top: (462/19.2)+vw
+			@include phone 
+				left: (390/10.24)+vw 
+				top: (752/10.24)+vw 
+			.tag 
+				top: (154/19.2)+vw 
+				@include phone 
+					top: (250/10.24)+vw
+	.pop 
+		position: absolute 
+		top: (225/19.2)+vw 
+		left: 0 
+		right: 0 
+		margin: 0 auto
+		width: (1024/19.2)+vw 
+		display: none 
+		z-index: 3
+		@include phone 
+			width: 100%
+			top: (224/10.24)+vw
+		.close 
+			position: absolute 
+			right: 0 
+			background: url(../images/close.png) no-repeat center top
+			background-size: 100% 
+			width: (48/19.2)+vw 
+			height: (44/19.2)+vw 
+			top: ((44/19.2)*-1)+vw 
+			cursor: pointer 
+			@include phone 
+				background: url(../images/closeMobile.png) no-repeat center top
+				background-size: 100% 
+				width: (71/10.24)+vw 
+				height: (64/10.24)+vw 
+				top: ((64/10.24)*-1)+vw 
+		.content 
+			margin: 0 auto 
+			width: (971/19.2)+vw 
+			min-height: (571/19.2)+vw 
+			background: url(../images/pdBg.png) no-repeat center top
+			background-size: 100% !important
+			padding: (53/19.2)+vw (162/19.2)+vw 0 (70/19.2)+vw
+			@include phone 
+				background: url(../images/pdBg_mobile.png) no-repeat center top
+				width: 100%
+				min-height: (1450/10.24)+vw
+				padding: (77/10.24)+vw (154/10.24)+vw 0
+			.swiper-container 
+				@include phone 
+					width: 100%
+			.swiper-slide
+				display: flex 
+				@include phone 
+					flex-direction: column 
+			.swiper-button-next 
+				right: 0 
+				@include phone 
+					right: (26/10.24)+vw 
+			.swiper-button-prev 
+				left: 0
+				@include phone 
+					left: (26/10.24)+vw 
+			.pic 
+				width: (357/9.71)+vw 
+				@include phone 
+					width: 100%
+			.pdInfo 
+				padding-top: (61/19.2)+vw 
+				font-size: (13/19.2)+vw 
+				line-height: 1.5 
+				width: 100%
+				@include phone 
+					padding-top: 0
+					font-size: (28/10.24)+vw 
+				h3 
+					font-size: (29/19.2)+vw 
+					margin-bottom: (18/19.2)+vw 
+					padding-left: (12/19.2)+vw 
+					line-height: 1 
+					@include phone 
+						font-size: (50/10.24)+vw 
+						text-align: center 
+						padding: 0 
+				.line 
+					width: (153/19.2)+vw 
+					@include phone 
+						width: (260/10.24)+vw 
+						margin: 0 auto
+				.txt 
+					font-size: (16/19.2)+vw 
+					line-height: 1.5 
+					text-align: justify 
+					margin-top: (15/19.2)+vw 
+					@include phone 
+						font-size: (36/10.24)+vw 
+						margin-top: (30/10.24)+vw 
+				span 
+					font-size: (13/19.2)+vw 
+					color: #878787 
+					@include phone 
+						font-size: (28/10.24)+vw 
+				.etc 
+					margin: (40/19.2)+vw 0 (25/19.2)+vw
+					display: flex 
+					justify-content: space-between 
+					align-items: flex-end 
+					b 
+						font-size: (29/19.2)+vw 
+						color: $orange
+						line-height: 1 
+						@include phone 
+							font-size: (64/10.24)+vw 
+				a 
+					background-color: $orange 
+					color: white 
+					text-decoration: none
+					font-size: (13/19.2)+vw 
+					line-height: (28/19.2)+vw 
+					display: inline-block 
+					padding: 0 (12/19.2)+vw 
+					border-radius: 28px
+					letter-spacing: 2px 
+					margin-top: (10/19.2)+vw 
+					@include phone 
+						font-size: (28/10.24)+vw 
+						line-height: (62/10.24)+vw 
+						padding: 0 (27/10.24)+vw 
+						border-radius: 62px
+						margin-top: (30/10.24)+vw 
+.section5 
+	background: url(../images/section4Bg.jpg) no-repeat center top
+	background-size: 100%
+	margin-bottom: calc(4.58vw + 35px)
+	.light 
+		position: absolute 
+		left: 0 
+		right: 0 
+		margin: 0 auto 
+		top: 0
+	.slider
+		position: absolute
+		top: (267/19.2)+vw 
+		left: 0 
+		right: 0 
+		margin: 0 auto 
+		@include phone
+			top: (420/10.24)+vw 
+		.mvTop 
+			width: (573/19.2)+vw 
+			@include phone
+				width: (841/10.24)+vw
+		.mvThumbs 
+			margin: (44/19.2)+vw auto 0
+			@include phone 
+				margin: (50/10.24)+vw auto 0
+			.swiper-wrapper
+				justify-content: center
+				@include phone
+					flex-direction: column 
+					width: (460/10.24)+vw
+			.swiper-slide 
+				width: auto !important
+				background: url(../images/btnBg.jpg) center 
+				padding: 0 (21/19.2)+vw
+				line-height: (30/19.2)+vw 
+				font-size: (16/19.2)+vw 
+				color: #654328 
+				border-radius: (30/19.2)+vw 
+				box-shadow: 1px 1px 3px #666
+				margin: 0 (20/19.2)+vw 3px 0
+				cursor: pointer 
+				@include phone 
+					font-size: (32/10.24)+vw 
+					line-height: (63/10.24)+vw 
+					padding: 0 (43/10.24)+vw 
+					margin: 0 0 (40/10.24)+vw 
+					border-radius: (63/10.24)+vw 
+					text-align: center
+				&:last-child
+					margin-right: 0
+				&:hover, &.swiper-slide-thumb-active
+					background: url(../images/btnBg_hover.jpg) center 
+					color: #fce0b8 
+		.swiper-button-prev 
+			left: (619/19.2)+vw 
+			top: (192/19.2)+vw 
+			@include phone 
+				left: (43/10.24)+vw 
+				width: (52/10.24)+vw 
+				top: (250/10.24)+vw 
+		.swiper-button-next
+			right: (619/19.2)+vw
+			top: (192/19.2)+vw 
+			@include phone 
+				right: (43/10.24)+vw 
+				width: (52/10.24)+vw 
+				top: (250/10.24)+vw 
+footer 
+	background-color: black 
+	position: fixed 
+	bottom: 35px 
+	z-index: 2 
+	width: 100%
+	@include phone 
+		position: fixed 
+		bottom: 0 
+		z-index: 100 
+		margin-bottom: 0
+	img 
+		margin: 0 auto 
+		max-width: (1024/19.2)+vw 
+		@include phone 
+			max-width: 100%

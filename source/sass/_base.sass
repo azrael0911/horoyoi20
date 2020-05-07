@@ -1,0 +1,27 @@
+*
+	font-family: 'Noto Sans TC', sans-serif !important
+	font-size: 16px
+	line-height: 30px
+#sxc_header_wrapper 
+	@include phone 
+		display: none
+#sxc_footer_wrapper 
+	@include phone 
+		display: none
+.pc 
+	@include phone 
+		display: none
+.mobile 
+	display: none
+	@include phone 
+		display: block
+section 
+	position: relative 
+	overflow: hidden
+.swiper-button-next, .swiper-button-prev 
+	width: (46/19.2)+vw
+	outline: none 
+	@include phone 
+		width: (74/10.24)+vw
+	&::after 
+		display: none
